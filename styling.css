@@ -246,3 +246,65 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Lake Bunyonyi article page */
+.article-page {
+  width: min(100% - 2rem, 760px);
+  margin: 3rem auto 5rem;
+}
+
+.article-page h1 {
+  max-width: 680px;
+  margin: 0.5rem 0 1rem;
+  color: #173f35;
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  line-height: 1.08;
+}
+
+.article-meta {
+  margin-bottom: 1.5rem;
+  color: #64736d;
+  font-size: 0.95rem;
+}
+
+.article-image {
+  margin: 0 0 2rem;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.article-image figcaption {
+  margin-top: 0.6rem;
+  color: #64736d;
+  font-size: 0.8rem;
+}
+
+.article-image figcaption a {
+  color: #286957;
+}
+
+.article-copy {
+  color: #33443d;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.article-copy p {
+  margin: 0 0 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .article-page {
+    margin-top: 2rem;
+  }
+
+  .article-copy {
+    font-size: 1rem;
+  }
+}
