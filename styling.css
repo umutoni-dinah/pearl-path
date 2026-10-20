@@ -308,3 +308,34 @@ body {
     font-size: 1rem;
   }
 }
+
+.site-footer {
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+  padding: 3rem 1.5rem;
+  background: #173f35;
+  color: #f7f4ed;
+  text-align: center;
+}
+
+.site-footer .brand {
+  color: #f7f4ed;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #d4e0d8;
+}
+
+.site-footer a:not(.brand) {
+  color: #e5c996;
+}
+
+.site-footer .footer-credit {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
