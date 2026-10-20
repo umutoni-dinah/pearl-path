@@ -374,3 +374,27 @@ button:focus-visible {
 .site-footer a:focus-visible {
   outline-color: #e5c996;
 }
+
+.about-section {
+  width: min(100% - 2rem, 900px);
+  margin: 4rem auto;
+  padding: clamp(2rem, 6vw, 4rem);
+  border-radius: 1.25rem;
+  background: #eee6d6;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin: 0.5rem 0 1rem;
+  color: #173f35;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+/* styling the about section */
+.about-section > p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #33443d;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
