@@ -398,3 +398,14 @@ button:focus-visible {
   font-size: 1.05rem;
   line-height: 1.8;
 }
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.brand {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
