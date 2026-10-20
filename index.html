@@ -49,9 +49,23 @@
                     mountains.
                 </p>
             </div>
+<input class="filter-radio" type="radio" name="destination-filter" id="filter-all" checked>
+<input class="filter-radio" type="radio" name="destination-filter" id="filter-lakes">
+<input class="filter-radio" type="radio" name="destination-filter" id="filter-wildlife">
+<input class="filter-radio" type="radio" name="destination-filter" id="filter-river">
+<input class="filter-radio" type="radio" name="destination-filter" id="filter-waterfalls">
+<input class="filter-radio" type="radio" name="destination-filter" id="filter-mountains">
 
+<div class="filter-controls" role="group" aria-label="Filter destinations">
+  <label for="filter-all">All</label>
+  <label for="filter-lakes">Lakes</label>
+  <label for="filter-wildlife">Wildlife</label>
+  <label for="filter-river">River</label>
+  <label for="filter-waterfalls">Waterfalls</label>
+  <label for="filter-mountains">Mountains</label>
+</div>
             <div class="destination-grid">
-                <a class="destination-card" href="article.html">
+                <a class="destination-card" href="article.html" data-category="lakes">
                     <figure class="card-image">
                         <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Bunyonyi,_Uganda.jpg?width=1000"
                             alt="Lake Bunyonyi with green islands and hills in the distance" loading="lazy" />
@@ -75,7 +89,7 @@
                         <span class="read-time">18 Oct 2026 · 5 min read</span>
                     </div>
                 </a>
-                <a class="destination-card" href="bwindi.html">
+                <a class="destination-card" href="bwindi.html" data-category="wildlife">
                     <figure class="card-image">
                         <img src="https://commons.wikimedia.org/wiki/Special:FilePath/063_Mist_rising_from_the_Bwindi_Impenetrable_Forest_National_Park_Photo_by_Giles_Laurent.jpg?width=1000"
                             alt="Morning mist above Bwindi's forest canopy" loading="lazy" />
@@ -101,7 +115,7 @@
                         <span class="read-time">15 Oct 2026 · 7 min read</span>
                     </div>
                 </a>
-                <a class="destination-card" href="nile.html">
+                <a class="destination-card" href="nile.html" data-category="river">
                     <figure class="card-image">
                         <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Source_of_the_Nile,_Jinja_Uganda.jpg?width=1000"
                             alt="The Nile beside a green riverbank near Jinja" loading="lazy" />
@@ -126,7 +140,7 @@
                         <span class="read-time">12 Oct 2026 · 6 min read</span>
                     </div>
                 </a>
-                <a class="destination-card" href="sipi.html">
+                <a class="destination-card" href="sipi.html" data-category="waterfalls">
                     <figure class="card-image">
                         <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sipi_Falls_in_Kapchorwa_District_of_Uganda_03.jpg?width=1000"
                             alt="Sipi Falls cascading down a green hillside" loading="lazy" />
@@ -177,7 +191,7 @@
                         <span class="read-time">06 Oct 2026 · 8 min read</span>
                     </div>
                 </a>
-                <a class="destination-card" href="rwenzori.html">
+                <a class="destination-card" href="rwenzori.html" data-category="mountains">
                     <figure class="card-image">
                         <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rwenzori_Mountains.jpg"
                             alt="Mountain slopes and clouds in the Rwenzori Mountains" loading="lazy" />

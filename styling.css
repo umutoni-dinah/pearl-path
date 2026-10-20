@@ -409,3 +409,66 @@ h3,
   font-family: "DM Serif Display", serif;
   font-weight: 400;
 }
+
+/* Filter Controls */
+.filter-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+
+.filter-controls label {
+  padding: 0.6rem 1rem;
+  border: 1px solid #cbd5ce;
+  border-radius: 999px;
+  background: #fff;
+  color: #234b3e;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.filter-controls label:hover {
+  background: #e8eee9;
+}
+
+#filter-all:checked ~ .filter-controls label[for="filter-all"],
+#filter-lakes:checked ~ .filter-controls label[for="filter-lakes"],
+#filter-wildlife:checked ~ .filter-controls label[for="filter-wildlife"],
+#filter-river:checked ~ .filter-controls label[for="filter-river"],
+#filter-waterfalls:checked ~ .filter-controls label[for="filter-waterfalls"],
+#filter-mountains:checked ~ .filter-controls label[for="filter-mountains"] {
+  border-color: #173f35;
+  background: #173f35;
+  color: #fff;
+}
+
+#filter-all:focus-visible ~ .filter-controls label[for="filter-all"],
+#filter-lakes:focus-visible ~ .filter-controls label[for="filter-lakes"],
+#filter-wildlife:focus-visible ~ .filter-controls label[for="filter-wildlife"],
+#filter-river:focus-visible ~ .filter-controls label[for="filter-river"],
+#filter-waterfalls:focus-visible ~ .filter-controls label[for="filter-waterfalls"],
+#filter-mountains:focus-visible ~ .filter-controls label[for="filter-mountains"] {
+  outline: 3px solid #b45309;
+  outline-offset: 3px;
+}
+
+#filter-lakes:checked ~ .destination-grid .destination-card:not([data-category="lakes"]),
+#filter-wildlife:checked ~ .destination-grid .destination-card:not([data-category="wildlife"]),
+#filter-river:checked ~ .destination-grid .destination-card:not([data-category="river"]),
+#filter-waterfalls:checked ~ .destination-grid .destination-card:not([data-category="waterfalls"]),
+#filter-mountains:checked ~ .destination-grid .destination-card:not([data-category="mountains"]) {
+  display: none;
+}
